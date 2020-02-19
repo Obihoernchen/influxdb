@@ -62,7 +62,6 @@ fpm_common_args = "-f -s dir --log error \
 --maintainer {} \
 --directories {} \
 --directories {} \
---directories {} \
 --description \"{}\"".format(
      VENDOR,
      PACKAGE_URL,
@@ -73,7 +72,6 @@ fpm_common_args = "-f -s dir --log error \
      MAINTAINER,
      LOG_DIR,
      DATA_DIR,
-     MAN_DIR,
      DESCRIPTION)
 
 for f in CONFIGURATION_FILES:
