@@ -64,7 +64,6 @@ fpm_common_args = "-f -s dir --log error \
 --maintainer {} \
 --directories {} \
 --directories {} \
---directories {} \
 --rpm-attr 755,{},{}:{} \
 --rpm-attr 755,{},{}:{} \
 --description \"{}\"".format(
@@ -77,7 +76,6 @@ fpm_common_args = "-f -s dir --log error \
      MAINTAINER,
      LOG_DIR,
      DATA_DIR,
-     MAN_DIR,
      USER, GROUP, LOG_DIR,
      USER, GROUP, DATA_DIR,
      DESCRIPTION)
